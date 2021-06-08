@@ -1,0 +1,110 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: #f1f5f8;
+  color: #222;
+}
+
+.container{
+  width: 80%;
+  background-color: DodgerBlue;
+  margin: auto;
+  padding: 20px;
+  max-height: none;
+  max-width: none;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.flex-container2{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+.flex-left2{
+  flex: 40%;
+  padding: 10px;
+  background-color: white;
+}
+.flex-right2{
+  flex: 60%;
+  padding: 10px;
+  background-color: 
+}
+.flex-left2_1{
+  flex: 100%;
+  flex-direction: column;
+}
+
+.flex-left{
+  flex: 50%;
+  padding: 30px;
+}
+
+.flex-right{
+  flex: 50%;
+  padding: 10px;
+}
+
+.flex-right h1{
+  font-size: 50px;
+}
+
+@media screen and (max-width: 648px){
+  .flex-container{
+    flex-direction: column;
+  }
+  .flex-container2{
+    flex-direction: column;
+  }
+  .flex-right {
+    text-align: center;
+  }
+  .flex-right ul {
+    text-align: center;
+    margin: auto;
+  }
+  .flex-right li {
+    display: block;
+  }
+}
+
+img {
+  border-radius: 50%;
+  max-width: 40%;
+  height: auto;
+  display: flex;
+  margin: auto;
+}
+.flex-right ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.flex-right li {
+  list-style-type: none;
+  float: left;
+}
+.flex-left2 h1{
+  letter-spacing: 2px;
+}
+
+.flex-left2_1{
+  padding-left: 20px;
+}
+.flex-left2_1 ul{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.flex-left2_1 li {
+  list-style-type: none;
+  float: left;
+}

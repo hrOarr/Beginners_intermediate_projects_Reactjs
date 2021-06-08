@@ -1,0 +1,97 @@
+.binary_search{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background-color: #3E417B;
+	box-shadow: 0 1px 3px #000;
+}
+.binary_search h1{
+	color: white;
+}
+.top{
+	display: flex;
+	flex-direction: column;
+}
+.top_first{
+	display: flex;
+	justify-content: center;
+}
+.top_second{
+	display: flex;
+	justify-content: center;
+}
+.top .top_first span button{
+	border: none;
+	height: 60%;
+	border-radius: 4px;
+	text-align: center;
+	padding: 10px;
+	margin: 20px;
+	cursor: pointer;
+	box-shadow: 0 2px 4px #000;
+}
+.top .top_second ul{
+	list-style-type: none;
+}
+.top .top_second ul li{
+	display: inline;
+	float: left;
+	margin: 4px;
+	box-shadow: 0 1px 3px #000;
+}
+
+.bottom{
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+}
+.bottom_first{
+	display: flex;
+	justify-content: center;
+}
+.bottom_second{
+	display: flex;
+	justify-content: center;
+}
+.bottom .bottom_first span button{
+	border: none;
+	height: 60%;
+	border-radius: 4px;
+	text-align: center;
+	padding: 10px;
+	margin: 20px;
+	cursor: pointer;
+	box-shadow: 0 2px 4px #000;
+}
+
+.bottom .bottom_second ul{
+	list-style-type: none;
+}
+.bottom .bottom_second ul li{
+	display: inline;
+	float: left;
+	margin: 5px;
+	box-shadow: 0 1px 3px #000;
+}
+
+.item-vis{
+	background-color: red;
+}
+
+form label{
+	color: white;
+	margin: 4px;
+}
+form input[type='number']{
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+.display_none{
+	display: none;
+}
+.result{
+	color: white;
+	text-align: center;
+}

@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './components/Home';
+import Index from './components/to-do/index';
+import WeatherUpdate from './components/weather-app/weather-update';
+import CoronaTracker from './components/corona-tracker/corona-tracker';
+import BinarySearch from './components/searching/BinarySearch';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = ()=> {
+
+	return (
+		<div className="container">
+		     <BrowserRouter>
+			   <Switch>
+			     // routes
+			     <Route path="/" component={Home} exact />
+			     <Route path="/binary-search" component={BinarySearch} exact />
+			     <Route path="/to-do" component={Index} exact />
+			     <Route path="/corona-tracker" component={CoronaTracker} exact />
+			     <Route path="/weather-update" component={WeatherUpdate} exact />
+
+			   </Switch>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;
